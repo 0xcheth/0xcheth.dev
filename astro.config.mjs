@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://0xcheth.github.io/0xcheth.dev',
+	site: 'https://0xcheth.github.io/0xcheth.dev/',
 	integrations: [mdx(), sitemap()],
 	base: '/', // For root-level deployment
 
