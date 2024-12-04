@@ -8,8 +8,11 @@ pubDate: 'Nov 30 2024'
 <p>&lt;Hello world&gt;</p>
 
 <h5>Just attach a gif 🤷🏽</h5>
+
 <img src="/blog/69420.gif"/>
+
 <p></p>
+
 <h5>or hard code it in html+css animation using an asset pack...</h5>
 
 	<div class="overlay scrollbar">
@@ -30,8 +33,11 @@ pubDate: 'Nov 30 2024'
 		</div>
 	</div>
 </div>
+
 <p></p>
+
 <h5>html code for assets</h5>
+
 <pre>
   <code>
 		&lt;div class="overlay"&gt;
@@ -52,4 +58,58 @@ pubDate: 'Nov 30 2024'
 			&lt;/div&gt;
 		&lt;/div&gt;
   </code>
+</pre>
+
+<p></p>
+
+<pre>
+  <code>
+
+.overlay &x7B;
+	position: relative;
+	width: 75vw; 	 
+	overflow: hidden;
+&x7D;
+.layer &x7B;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex; /&lowast; Arrange images side-by-side &lowast;/
+	width: 200%; /&lowast; Combined width of two images &lowast;/
+	object-fit: cover;
+&x7D;
+
+.layer img &x7B;
+	display: block;
+	width: 50%; /&lowast; Each image takes up half the layer's width &lowast;/
+	height: auto; 
+&x7D;
+
+&x40;keyframes seamless-loop &x7B;
+	0% &x7B;
+		transform: translateX(0); /&lowast; Start with the first image visible &lowast;/
+	&x7D;
+	100% &x7B;
+		transform: translateX(-50%); /&lowast; Move left by half of the layer's width &lowast;/
+	&x7D;
+&x7D;
+
+/&lowast; Apply animations to each layer with different speeds &lowast;/
+.layer1 &x7B;
+	animation: seamless-loop 105s linear infinite;
+&x7D;
+
+.layer2 &x7B;
+	animation: seamless-loop 70s linear infinite;
+&x7D;
+
+.layer3 &x7B;
+	animation: seamless-loop 30s linear infinite;
+&x7D;
+
+.layer4 &x7B;
+	animation: seamless-loop 3s linear infinite;
+&x7D;
+
+	</code>
 </pre>
