@@ -223,6 +223,9 @@ hr {
 	position: relative;
 	width: 75vw; 	 
 	overflow: hidden;
+}
+
+.scrollbar {
 	overflow-x:scroll;
 }
 
