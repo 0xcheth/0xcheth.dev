@@ -65,51 +65,51 @@ pubDate: 'Nov 30 2024'
 <pre>
   <code>
 
-.overlay &x7B;
+.overlay &#123;
 	position: relative;
 	width: 75vw; 	 
 	overflow: hidden;
-&x7D;
-.layer &x7B;
+&#125;
+.layer &#123;
 	position: absolute;
 	top: 0;
 	left: 0;
 	display: flex; /&lowast; Arrange images side-by-side &lowast;/
 	width: 200%; /&lowast; Combined width of two images &lowast;/
 	object-fit: cover;
-&x7D;
+&#125;
 
-.layer img &x7B;
+.layer img &#123;
 	display: block;
 	width: 50%; /&lowast; Each image takes up half the layer's width &lowast;/
 	height: auto; 
-&x7D;
+&#125;
 
-&x40;keyframes seamless-loop &x7B;
-	0% &x7B;
+&#64;keyframes seamless-loop &#123;
+	0% &#123;
 		transform: translateX(0); /&lowast; Start with the first image visible &lowast;/
-	&x7D;
-	100% &x7B;
+	&#125;
+	100% &#123;
 		transform: translateX(-50%); /&lowast; Move left by half of the layer's width &lowast;/
-	&x7D;
-&x7D;
+	&#125;
+&#125;
 
 /&lowast; Apply animations to each layer with different speeds &lowast;/
-.layer1 &x7B;
+.layer1 &#123;
 	animation: seamless-loop 105s linear infinite;
-&x7D;
+&#125;
 
-.layer2 &x7B;
+.layer2 &#123;
 	animation: seamless-loop 70s linear infinite;
-&x7D;
+&#125;
 
-.layer3 &x7B;
+.layer3 &#123;
 	animation: seamless-loop 30s linear infinite;
-&x7D;
+&#125;
 
-.layer4 &x7B;
+.layer4 &#123;
 	animation: seamless-loop 3s linear infinite;
-&x7D;
+&#125;
 
 	</code>
 </pre>
