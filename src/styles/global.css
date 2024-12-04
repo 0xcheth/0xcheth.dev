@@ -15,13 +15,13 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 
-.overlay {
-	position: relative;
-	width: 50vw; 
-	 
-	overflow: hidden;
-	height: clamp(300px, 0vh, 100vh);
-}
+.container {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	text-align: center; 
+	flex-direction: column;
+}  
 
 .layer {
 	position: absolute;
@@ -29,11 +29,13 @@
 	left: 0;
 	display: flex; /* Arrange images side-by-side */
 	width: 200%; /* Combined width of two images */
+	object-fit: cover;
 }
 
 .layer img {
+	display: block;
 	width: 50%; /* Each image takes up half the layer's width */
-	height: auto; /* Maintain aspect ratio */
+	height: auto; 
 }
 
 @keyframes seamless-loop {
@@ -61,14 +63,6 @@
 .layer4 {
 	animation: seamless-loop 3s linear infinite;
 }
-
-.container {
-	display: flex;
-	justify-content: center; 
-	align-items: center; 
-	text-align: center; 
-	flex-direction: column;
-}  
 
 @font-face {
 	font-family: 'Atkinson';
@@ -224,6 +218,30 @@ hr {
 		font-size: 12px;
 	}
 }
+
+.overlay {
+	position: relative;
+	width: 75vw; 	 
+	overflow: hidden;
+	overflow-x:scroll;
+}
+
+@media (max-width: 719px) {
+    .overlay {
+        height: 14vh;
+    }
+}
+@media (max-width: 960px) {
+    .overlay {
+        height: 16vh;
+    }
+}
+@media (min-width: 1081px) {
+    .overlay {
+        height: 55vh;
+    }
+}
+
 
 .sr-only {
 	border: 0;
