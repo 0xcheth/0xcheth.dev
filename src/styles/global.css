@@ -179,30 +179,29 @@ img {
 	pointer-events: none;
 }
 code {
-    display: block; /* Ensure <code> takes up full width */
-    background-color: rgb(229, 233, 240); /* Light grey background */
-    color: rgb(34, 41, 57); /* Dark text color for contrast */
-    border: 1px solid rgb(169, 169, 169); /* Grey border around the code */
-    border-radius: 4px; /* Rounded corners for the box */
-    padding: 8px; /* Padding inside the code block */
-    white-space: pre-wrap; /* Allows text to wrap and respects whitespace */
-    word-wrap: break-word; /* Breaks long words onto the next line */
-    overflow-wrap: break-word; /* Additional support for wrapping long words */
-    max-width: 100%; /* Prevents overflow */
+    display: block; 
+    background-color: rgb(229, 233, 240); 
+    color: rgb(34, 41, 57); 
+    border: 1px solid greenyellow; 
+    border-radius: 4px; 
+    padding: 8px; 
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    max-width: 100%; 
 }
 
-/* Styling for the <pre> block */
 pre {
-    background-color: rgb(229, 233, 240); /* Light grey background */
-    color: rgb(34, 41, 57); /* Dark text color */
-    border: 1px solid rgb(169, 169, 169); /* Grey border */
-    border-radius: 4px; /* Rounded corners for the box */
-    padding: 15px; /* Padding inside the block */
-    white-space: pre-wrap; /* Ensures code wraps instead of overflowing */
-    word-wrap: break-word; /* Breaks long words onto the next line */
-    overflow-wrap: break-word; /* Additional support for wrapping long words */
-    max-width: 100%; /* Prevents horizontal overflow */
-    margin: 1em 0; /* Adds spacing above and below the block */
+    background-color: rgb(229, 233, 240); 
+    color: rgb(34, 41, 57); 
+    border: 1px solid greenyellow; 
+    border-radius: 4px; 
+    padding: 15px; 
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    max-width: 100%; 
+    margin: 1em 0; 
 }
 
 pre > code {
