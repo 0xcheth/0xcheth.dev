@@ -30,6 +30,8 @@
 	display: flex; /* Arrange images side-by-side */
 	width: 200%; /* Combined width of two images */
 	object-fit: cover;
+	margin-bottom: 0px;
+
 }
 
 .layer img {
@@ -131,10 +133,12 @@ h5 {
 }
 
 figcaption {
+	position: relative;
 	display:block;
-  	margin-top: 5px;
+  	margin-top: 10px;
 	font-size: 14px;
 	color: rgb(172, 172, 172);
+	padding: 0px;
 }
 
 strong,
@@ -239,35 +243,37 @@ hr {
 	figcaption {
 
 		font-size: 12px;
+		
 	}
-	figcaption2 {
-		display: hidden;
-	}
+
 }
 
 .overlay {
 	position: relative;
-	width: 90vw; 	 
+	width: 80vw; 
 	overflow: hidden;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
 }
 
 .scrollbar {
 	overflow-x:scroll;
 }
 
-@media (max-width: 719px) {
+@media (min-width: 719px),(max-width: 959px) {
     .overlay {
         height: 14vh;
     }
 }
-@media (max-width: 960px) {
+@media (min-width: 960px),(max-width: 1079px){
     .overlay {
         height: 16vh;
     }
 }
-@media (min-width: 1081px) {
+@media (min-width: 1080px) {
     .overlay {
-        height: 65vh;
+        height: 55vh;
     }
 }
 
