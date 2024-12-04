@@ -17,7 +17,7 @@
 }
 .overlay {
 	position: relative;
-	width: 100vw; 
+	width: 50vw; 
 	height: 100vh; 
 	overflow: hidden;	
 }
@@ -46,11 +46,11 @@
 
 /* Apply animations to each layer with different speeds */
 .layer1 {
-	animation: seamless-loop 100s linear infinite;
+	animation: seamless-loop 105s linear infinite;
 }
 
 .layer2 {
-	animation: seamless-loop 60s linear infinite;
+	animation: seamless-loop 70s linear infinite;
 }
 
 .layer3 {
