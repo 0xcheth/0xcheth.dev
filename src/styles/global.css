@@ -131,7 +131,8 @@ h5 {
 }
 
 figcaption {
-  	margin-top: 0px;
+	display:block;
+  	margin-top: 5px;
 	font-size: 14px;
 	color: rgb(172, 172, 172);
 }
@@ -239,11 +240,14 @@ hr {
 
 		font-size: 12px;
 	}
+	figcaption2 {
+		display: hidden;
+	}
 }
 
 .overlay {
 	position: relative;
-	width: 75vw; 	 
+	width: 90vw; 	 
 	overflow: hidden;
 }
 
@@ -263,7 +267,7 @@ hr {
 }
 @media (min-width: 1081px) {
     .overlay {
-        height: 55vh;
+        height: 65vh;
     }
 }
 

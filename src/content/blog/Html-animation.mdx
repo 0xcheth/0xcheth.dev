@@ -31,48 +31,55 @@ pubDate: 'Nov 30 2024'
 			<img src="/animations/moving trees/B/background B layer4.png" />
 			<img src="/animations/moving trees/C/background C layer4.png" />
 		</div>
-							<figcaption>&larr;Swipe me</figcaption>
+		<figcaption>&larr;Swipe me</figcaption>
 	</div>
 </div>
-
+<figcaption2>&rarr;Swipe me</figcaption2>
 <p></p>
 
-<h5>html code for assets</h5>
+<h5>Overlaying assets using html</h5>
 
 <pre>
   <code>
 		&lt;div class="overlay"&gt;
+
 			&lt;div class="layer"&gt;
 				&lt;img src="/animations/moving trees/B/background B layer1.png" /&gt;
 			&lt;/div&gt;
+
 			&lt;div class="layer layer1"&gt;
 				&lt;img src="/animations/moving trees/B/background B layer2.png" /&gt;
 				&lt;img src="/animations/moving trees/C/background C layer2.png" /&gt;
 			&lt;/div&gt;
+
 			&lt;div class="layer layer2"&gt;
 				&lt;img src="/animations/moving trees/B/background B layer3.png" /&gt;
 				&lt;img src="/animations/moving trees/C/background C layer3.png" /&gt;
 			&lt;/div&gt;
+
 			&lt;div class="layer layer3"&gt;
 				&lt;img src="/animations/moving trees/B/background B layer4.png" /&gt;
 				&lt;img src="/animations/moving trees/C/background C layer4.png" /&gt;
 			&lt;/div&gt;
+
 		&lt;/div&gt;
   </code>
 </pre>
 
 <p></p>
 
-<h5>html code for animating these assets</h5>
+<h5>Using css to animate them</h5>
 
 <pre>
   <code>
 
+&lt;style&gt;
 .overlay &#123;
 	position: relative;
 	width: 75vw; 	 
 	overflow: hidden;
 &#125;
+
 .layer &#123;
 	position: absolute;
 	top: 0;
@@ -113,6 +120,7 @@ pubDate: 'Nov 30 2024'
 .layer4 &#123;
 	animation: seamless-loop 3s linear infinite;
 &#125;
+&lt;/style&gt;
 
 	</code>
 </pre>
