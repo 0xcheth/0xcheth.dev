@@ -100,7 +100,7 @@ main {
 
 	max-width: calc(100% - 5em);
 	margin: auto;
-
+	padding: 0.5em 1em;
 }
 
 h1,
